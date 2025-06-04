@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VMGraphic Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .typing {
+      display: inline-block;
+      border-right: 2px solid black;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(10, end), blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100px; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-contact {
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 50px;
+      padding: 10px 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn-contact:hover {
+      background-color: #0b5ed7;
+    }
+
+    .marathi-text {
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.jpg" alt="VMGraphic Logo"/>
+        <span class="typing fw-bold fs-4">VMGraphic</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Our Services at VMGraphic</h1>
+      <p class="text-muted">We bring your ideas to life with creative design solutions.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- 7 Services -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">1. Banner Design</h5>
+          <p class="card-text">Custom banners for events, shops, and promotions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">2. Wedding Banner Making</h5>
+          <p class="card-text">Attractive and personalized wedding banners.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">3. Video Editing</h5>
+          <p class="card-text">Professional video editing for events and social media.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">4. Logo Design</h5>
+          <p class="card-text">Creative and impactful logo designs for your brand.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">5. Visiting Card Design</h5>
+          <p class="card-text">Professional business cards to make a lasting impression.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-3">
+          <h5 class="card-title">6. Poster Design</h5>
+          <p class="card-text">Posters for advertisements, social media, and events.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mx-auto">
+        <div class="card service-card p-3">
+          <h5 class="card-title">7. Social Media Graphics</h5>
+          <p class="card-text">Custom graphics for Instagram, Facebook, and more.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marathi Paragraph -->
+    <div class="mt-5 marathi-text text-center">
+      <p>
+        आमच्या व्हीएमग्राफिकमध्ये, आम्ही आपली कल्पना वास्तवात आणतो. आम्ही ग्रामीण भागातील गरजा लक्षात घेऊन सेवा देतो जसे की बॅनर डिझाईन, व्हिडिओ एडिटिंग, आणि सोशल मिडिया पोस्ट. आमचं ध्येय तुमचं ब्रँड अधिक आकर्षक बनवणे आहे.
+      </p>
+    </div>
+
+    <!-- Get in Touch Button -->
+    <div class="text-center mt-4">
+      <a href="contact.html" class="btn btn-contact">Get in Touch</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
